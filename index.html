@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #161b22;
+            color: #c9d1d9;
+        }
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 3em;
+            background-color: #151e2a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #58a6ff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #c9d1d9;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #58a6ff;
+        }
+
+        /* Hero Section */
+        
+            
+        
+        .hero
+        {
+            background-image: url(developer-8764524_1280.jpg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15em 3em;
+            background-color: #0d1117;
+        }
+        .hero-text h1 {
+            
+            font-size: 3.5em;
+            color: #ffffff;
+        }
+        .hero-text h1 span {
+            color: #cb4024;
+        }
+        .hero-text p {
+            margin: 1em 0;
+            font-size: 1.2em;
+        }
+        .cta {
+            display: inline-block;
+            background-color: #58a6ff;
+            
+            color: #0d1117;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 2em;
+            font-weight: bold;
+        }
+        .cta:hover {
+            background-color: #4694e5;
+        }
+        
+        /* About Section */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about{
+    font-family: Arial, sans-serif;
+    background-color: #0f0f1b;
+    color: #d1d1d1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: #1a3f67;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.text-section {
+    padding: 30px;
+    width: 60%;
+}
+
+.text-section h2 {
+    font-size: 2.5rem;
+    color: #151e2a;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.text-section .intro {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-section h3 {
+    font-size: 1.2rem;
+    color: #151e2a;
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #151e2a;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #29293d, #1c1c32);
+    padding: 20px;
+}
+
+.photo-container {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Query for Small Screens (Tablets and Mobile Devices) */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .image-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .photo-container img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .text-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-section p,
+    .contact-section {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+        /* Section Design */
+        .skills-education {
+            background-color: #161b22;
+            padding: 4em 2em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+        }
+        .box {
+            background-color: #1c1f26;
+            padding: 2em;
+            border-radius: 1em;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            width: 300px;
+        }
+        .box h3 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+        .box ul {
+            list-style: none;
+        }
+        .box ul li {
+            margin: 0.8em 0;
+            font-size: 1.1em;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            background-color: #1c1f26;
+            padding: 3em 2em;
+            text-align: center;
+        }
+        .contact-form h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #58a6ff;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+        }
+        .form-group {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            color: #58a6ff;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8em;
+            border: none;
+            border-radius: 0.5em;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-size: 1em;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .submit-btn {
+            padding: 1em 2em;
+            background-color: #58a6ff;
+            color: #0d1117;
+            border: none;
+            border-radius: 0.5em;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #4694e5;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-image img {
+                margin-top: 2em;
+            }
+            .skills-education {
+                flex-direction: column;
+            }
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Shweta Sharma</span></h1>
+            <p>a passionate web developer and graphic designer dedicated to creating visually appealing, functional, and user-friendly digital experiences.</p>
+            <a href="shweta resume.pdf" class="cta">VIEW CV</a>
+        </div>
+        
+    </section>
+
+    <section>
+        
+
+
+
+
+    <div class="container">
+        <div class="about-section">
+            <div class="text-section">
+                <div class="title">
+                    <h2>About me</h2>
+                </div>
+                <div class="content">
+                    <p class="intro">Hi!</p>
+                    <p>
+                        My name is <strong>Shweta Sharma</strong>.<br>
+                        I am a Graphic Desginer and Web Developer based in India with experience through projects and internships.
+                    </p>
+                    <p>
+                        <strong>My objective:</strong> Challenge myself in a new environment to learn, develop, and improve my skills through different projects and contribute more to the company with my abilities.
+                    </p>
+                </div>
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <p>
+                        ✉️ simplyshweta00@gmail.com<br>
+                        📞 7011223636<br>
+                        🔗 <a href="https://www.linkedin.com/in/shweta-sharma-6651ab330/" target="_blank">linkedin.com/in/shweta-sharma</a><br>
+                        🔗<a href="" target="_blank">github/shwetasharma</a>
+                    </p>
+                </div>
+            </div>
+            <div class="image-section">
+                <div class="photo-container">
+                    <img src="IMG_4726.png" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    
+
+    <section class="skills-education">
+        <div class="box">
+            <h3>Education</h3>
+            <ul>
+                <li>12th Grade - Passed from rama devi girls inter college</li>
+                <li>10th Grade - passed from rama devi girls inter college</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Critical Thinking</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>JavaScript</li>
+                <li>Adobe Suite</li>
+                <li>Figma & Canva</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Work experience</h3>
+            <ul>
+                <li> Graphic Design Intern
+                    </li>
+                <li>
+                    Inamigos Foundation
+                    November 2024 – December 13, 2024</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Language</h3>
+            <ul>
+                <li>English (Pre-intermediate)</li>
+                <li>Hindi</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Interest</h3>
+            <ul>
+                <li>Design Trends</li>
+                <li>Technology</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xkgnarzo" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shweta Sharma. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
